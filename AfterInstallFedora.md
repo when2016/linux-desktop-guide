@@ -21,4 +21,17 @@ Type=Application
 Categories=Development;
 EOL
 
+##CapsLock2Esc
+https://blog.csdn.net/mzqj_WPF/article/details/41120175
+解决方案
 
+
+1、以下代码保存为 CapsLock2Esc.reg 文件；
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
+"Scancode Map"=hex:00,00,00,00,00,00,00,00,03,00,00,00,3a,00,01,00,01,00,3a,00,00,00,00,00
+
+2、双击该文件，弹出框，选“是”；
+
+3、重启系统，完成。
